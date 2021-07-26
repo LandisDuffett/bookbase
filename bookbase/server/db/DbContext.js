@@ -1,10 +1,10 @@
 import mongoose from 'mongoose'
-import { Value as ValueSchema } from '../models/Value'
-import { AccountSchema } from '../models/Account'
+import { Book as BookSchema } from '../models/Book'
+import { Profile as ProfileSchema } from '../models/Profile'
 
 class DbContext {
-  Values = mongoose.model('Value', ValueSchema);
-  Account = mongoose.model('Account', AccountSchema);
+  Books = mongoose.model('Book', BookSchema);
+  Profile = mongoose.model('Profile', ProfileSchema);
 }
 
 export const dbContext = new DbContext()
